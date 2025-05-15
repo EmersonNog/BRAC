@@ -1,0 +1,45 @@
+.tilt-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+  will-change: transform;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tilt-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.tilt-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.tilt-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 16px;
+}
+
+.tilt-wrapper {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}

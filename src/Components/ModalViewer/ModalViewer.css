@@ -1,0 +1,114 @@
+.modal-uiux-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-uiux-content {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 860px;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: popIn 0.25s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-uiux-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s ease;
+}
+
+.modal-uiux-close:hover {
+  color: #000;
+}
+
+.modal-uiux-media {
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-uiux-media video,
+.modal-uiux-media img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  background-color: #000;
+}
+
+.modal-uiux-text {
+  padding: 20px 24px;
+  text-align: left;
+}
+
+.modal-uiux-text h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.modal-uiux-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .modal-uiux-content {
+    border-radius: 14px;
+    max-height: 100vh;
+  }
+
+  .modal-uiux-close {
+    font-size: 1.8rem;
+    top: 10px;
+    right: 12px;
+  }
+
+  .modal-uiux-text {
+    padding: 16px;
+  }
+
+  .modal-uiux-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .modal-uiux-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animation */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
