@@ -6,6 +6,7 @@ import DiscoverSection from "../../Components/DiscoverSection/DiscoverSection";
 import TutorialsVsCarousel from "../../Components/TutorialsCarousel/VS/TutorialsVsCarousel";
 import TutorialsOtherCarousel from "../../Components/TutorialsCarousel/Others/TutorialsOtherCarousel";
 import "./Home.css";
+import JoinCommunitySection from "../../Components/JoinCommunitySection/JoinCommunitySection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <LeadersSection />
       <TutorialsVsCarousel />
       <TutorialsOtherCarousel />
+      <JoinCommunitySection />
     </div>
   );
 }

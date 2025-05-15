@@ -19,7 +19,7 @@ export default function ResultsSection() {
       <AnimatedSection direction="right">
         <h2 className="results-title">Resultados em Campo</h2>
         <p className="results-subtitle">
-          Aplicando as estratégias do Lastwar App, nossos comandantes alcançaram
+          Aplicando as estratégias da BRAC, nossos comandantes alcançaram
           vitórias expressivas e fortaleceram sua liderança nas alianças.
         </p>
 

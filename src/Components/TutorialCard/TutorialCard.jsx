@@ -1,5 +1,5 @@
 import React from "react";
-import "../TutorialsCarousel/VS/TutorialsVsCarousel.css";
+import "../TutorialsCarousel/Others/TutorialsOtherCarousel.css";
 
 export default function TutorialCard({ type, source, title, description }) {
   return (

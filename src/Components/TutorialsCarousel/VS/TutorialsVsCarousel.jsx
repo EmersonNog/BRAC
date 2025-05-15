@@ -13,6 +13,7 @@ import vs_terca from "../../../Assets/tutorial/vs-terca.jpg";
 import vs_quarta from "../../../Assets/tutorial/vs-quarta.jpg";
 import vs_quinta from "../../../Assets/tutorial/vs-quinta.jpg";
 import vs_sexta from "../../../Assets/tutorial/vs-sexta.jpg";
+import AnimatedSection from "../../Animate/Animate";
 
 export default function TutorialsCarousel() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -86,52 +87,54 @@ export default function TutorialsCarousel() {
 
   return (
     <section className="tutorials-section" id="tutorials-section">
-      <div className="tutorials-header">
-        <h2>
-          Explore nossos <em>tutoriais e apresentações</em> em destaque
-        </h2>
-        <p>Veja vídeos e apresentações para dominar e jogo.</p>
-        <h1>VS - Duelo de Alianças</h1>
-      </div>
-
-      <div className="carousel-container">
-        <button
-          className="nav-button left"
-          onClick={() => slider.current?.prev()}
-        >
-          <FaChevronLeft />
-        </button>
-
-        <div ref={sliderRef} className="keen-slider tutorials-carousel">
-          {tutorials.map((tut, index) => (
-            <div onClick={() => openModal(tut)} key={index}>
-              <TutorialCard {...tut} />
-            </div>
-          ))}
+      <AnimatedSection direction="right">
+        <div className="tutorials-header">
+          <h2>
+            Explore nossos <em>tutoriais e apresentações</em> em destaque
+          </h2>
+          <p>Veja vídeos e apresentações para dominar e jogo.</p>
+          <h1>VS - Duelo de Alianças</h1>
         </div>
 
-        <button
-          className="nav-button right"
-          onClick={() => slider.current?.next()}
-        >
-          <FaChevronRight />
-        </button>
-      </div>
+        <div className="carousel-container">
+          <button
+            className="nav-button left"
+            onClick={() => slider.current?.prev()}
+          >
+            <FaChevronLeft />
+          </button>
 
-      <div className="nav-buttons-mobile">
-        <button onClick={() => slider.current?.prev()}>
-          <FaChevronLeft />
-        </button>
-        <button onClick={() => slider.current?.next()}>
-          <FaChevronRight />
-        </button>
-      </div>
+          <div ref={sliderRef} className="keen-slider tutorials-carousel">
+            {tutorials.map((tut, index) => (
+              <div onClick={() => openModal(tut)} key={index}>
+                <TutorialCard {...tut} />
+              </div>
+            ))}
+          </div>
 
-      <ModalViewer
-        open={modalOpen}
-        onClose={() => setModalOpen(false)}
-        content={selectedContent}
-      />
+          <button
+            className="nav-button right"
+            onClick={() => slider.current?.next()}
+          >
+            <FaChevronRight />
+          </button>
+        </div>
+
+        <div className="nav-buttons-mobile">
+          <button onClick={() => slider.current?.prev()}>
+            <FaChevronLeft />
+          </button>
+          <button onClick={() => slider.current?.next()}>
+            <FaChevronRight />
+          </button>
+        </div>
+
+        <ModalViewer
+          open={modalOpen}
+          onClose={() => setModalOpen(false)}
+          content={selectedContent}
+        />
+      </AnimatedSection>
     </section>
   );
 }

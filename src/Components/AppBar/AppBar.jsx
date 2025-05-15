@@ -17,7 +17,10 @@ export default function AppBar() {
           <a onClick={() => scrollToSection("tutorials-section")}>Tutorial</a>
           <a onClick={() => scrollToSection("leaders-section")}>Nós</a>
         </nav>
-        <a href="#" className="explore-button">
+        <a
+          href="https://discord.com/invite/y3sk3naW"
+          className="explore-button"
+        >
           <span className="explore-text">Junte-se Agora</span>
         </a>
       </div>
