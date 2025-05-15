@@ -103,7 +103,7 @@ export default function TutorialsOtherCarousel() {
 
   return (
     <section className="tutorials-section">
-      <AnimatedSection direction="left">
+      <AnimatedSection direction="bottom">
         <div className="tutorials-header">
           <h1>Tutoriais Diversos</h1>
         </div>

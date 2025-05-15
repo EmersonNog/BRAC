@@ -5,7 +5,7 @@ import AnimatedSection from "../Animate/Animate";
 
 export default function LeadersSection() {
   return (
-    <AnimatedSection direction="left">
+    <AnimatedSection direction="bottom">
       <section className="leaders-section" id="leaders-section">
         <h2 className="leaders-title">Conheça nossa liderança</h2>
 

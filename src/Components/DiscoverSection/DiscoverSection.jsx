@@ -7,7 +7,7 @@ import AnimatedSection from "../Animate/Animate";
 export default function DiscoverSection() {
   return (
     <section className="discover-section" id="discover-section">
-      <AnimatedSection direction="bottom">
+      <AnimatedSection direction="left">
         <div className="discover-content">
           <h2 className="title">BRAC</h2>
           <p className="subtitle">
