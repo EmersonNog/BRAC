@@ -16,7 +16,7 @@ export default function ResultsSection() {
 
   return (
     <section className="results-section">
-      <AnimatedSection direction="right">
+      <AnimatedSection direction="bottom">
         <h2 className="results-title">Resultados em Campo</h2>
         <p className="results-subtitle">
           Aplicando as estratégias da BRAC, nossos comandantes alcançaram
