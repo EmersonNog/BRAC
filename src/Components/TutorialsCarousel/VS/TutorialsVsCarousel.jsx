@@ -87,7 +87,7 @@ export default function TutorialsCarousel() {
 
   return (
     <section className="tutorials-section" id="tutorials-section">
-      <AnimatedSection direction="right">
+      <AnimatedSection direction="bottom">
         <div className="tutorials-header">
           <h2>
             Explore nossos <em>tutoriais e apresentações</em> em destaque

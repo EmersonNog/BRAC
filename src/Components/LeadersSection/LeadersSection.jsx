@@ -5,8 +5,8 @@ import AnimatedSection from "../Animate/Animate";
 
 export default function LeadersSection() {
   return (
-    <section className="leaders-section" id="leaders-section">
-      <AnimatedSection direction="left">
+    <AnimatedSection direction="left">
+      <section className="leaders-section" id="leaders-section">
         <h2 className="leaders-title">Conheça nossa liderança</h2>
 
         <div className="leaders-tier top-tier">
@@ -32,7 +32,7 @@ export default function LeadersSection() {
           Nossa liderança move a BRAC com coragem, estratégia e união. Cada
           líder aqui representa a força que nos mantém sempre à frente.
         </p>
-      </AnimatedSection>
-    </section>
+      </section>
+    </AnimatedSection>
   );
 }
