@@ -4,9 +4,10 @@ import LeadersSection from "../../Components/LeadersSection/LeadersSection";
 import ResultsSection from "../../Components/ResultsSection/ResultsSection";
 import DiscoverSection from "../../Components/DiscoverSection/DiscoverSection";
 import TutorialsVsCarousel from "../../Components/TutorialsCarousel/VS/TutorialsVsCarousel";
-import TutorialsOtherCarousel from "../../Components/TutorialsCarousel/Others/TutorialsOtherCarousel";
-import "./Home.css";
 import JoinCommunitySection from "../../Components/JoinCommunitySection/JoinCommunitySection";
+import TutorialsOtherCarousel from "../../Components/TutorialsCarousel/Others/TutorialsOtherCarousel";
+import HighlightRewardsSection from "../../Components/HighlightRewardsSection/HighlightRewardsSection";
+import "./Home.css";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <DiscoverSection />
       <ResultsSection />
       <LeadersSection />
+      <HighlightRewardsSection />
       <TutorialsVsCarousel />
       <TutorialsOtherCarousel />
       <JoinCommunitySection />
