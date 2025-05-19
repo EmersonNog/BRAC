@@ -10,7 +10,7 @@ export default function SeasonOneTutorial() {
         <div className="season-video-intro">
           <video
             className="season-video"
-            autoPlay
+            autoPlay={true}
             muted={false}
             playsInline
             onEnded={() => setVideoEnded(true)}
