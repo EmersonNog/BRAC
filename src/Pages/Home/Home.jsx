@@ -8,6 +8,8 @@ import JoinCommunitySection from "../../Components/JoinCommunitySection/JoinComm
 import TutorialsOtherCarousel from "../../Components/TutorialsCarousel/Others/TutorialsOtherCarousel";
 import HighlightRewardsSection from "../../Components/HighlightRewardsSection/HighlightRewardsSection";
 import "./Home.css";
+import SeasonNotificationBar from "../../Components/SeasonNotificationBar/SeasonNotificationBar";
+import SeasonFloatButton from "../../Components/SeasonFloatButton/SeasonFloatButton";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <TutorialsVsCarousel />
       <TutorialsOtherCarousel />
       <JoinCommunitySection />
+      <SeasonNotificationBar />
+      <SeasonFloatButton />
     </div>
   );
 }

@@ -1,0 +1,29 @@
+/* SeasonNotificationBar.css */
+.season-bar {
+  background-color: #10b981;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.season-bar a {
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .season-bar {
+    font-size: 0.65rem;
+    padding: 5px;
+  }
+}

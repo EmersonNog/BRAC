@@ -1,0 +1,29 @@
+.season-float-btn {
+  position: fixed;
+  bottom: 54px;
+  right: 24px;
+  background-color: #10b981;
+  color: white;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 9999;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.season-float-btn:hover {
+  transform: scale(1.05);
+  background-color: #0e9f6e;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .season-float-btn {
+    display: none;
+  }
+}
