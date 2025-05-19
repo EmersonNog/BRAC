@@ -15,7 +15,6 @@ function Rotas() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/season-1" element={<SeasonOneTutorial />} />
-
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

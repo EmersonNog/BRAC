@@ -1,3 +1,19 @@
+.season-video-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.season-video {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
 .season1-tutorial {
   padding: 2.5rem;
   max-width: 1100px;
