@@ -1,25 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import crimsonVideo from "../../Assets/video/crimson.mp4";
 import "./SeasonOneTutorial.css";
 
 export default function SeasonOneTutorial() {
+  const [videoStarted, setVideoStarted] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
+  const [hasWatchedVideo, setHasWatchedVideo] = useState(false);
+
+  useEffect(() => {
+    const watched = localStorage.getItem("season1_intro_watched");
+    if (watched === "true") {
+      setHasWatchedVideo(true);
+    }
+  }, []);
+
+  const handleVideoEnd = () => {
+    setVideoEnded(true);
+    localStorage.setItem("season1_intro_watched", "true");
+  };
+
+  const handleSkip = () => {
+    setVideoStarted(false);
+    setVideoEnded(true);
+  };
+
   return (
     <div className="dark-page">
-      {!videoEnded && (
+      {!videoStarted && !videoEnded && (
+        <div className="video-cover-screen">
+          <div className="cover-content">
+            <h2 className="cover-title">🦠 Temporada 1: The Crimson Plague</h2>
+            <button
+              className="start-button"
+              onClick={() => setVideoStarted(true)}
+            >
+              ▶ Assistir Introdução
+            </button>
+            {hasWatchedVideo && (
+              <div className="skip-container">
+                <button className="skip-button" onClick={handleSkip}>
+                  ⏭ Pular Introdução
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {videoStarted && !videoEnded && (
         <div className="season-video-intro">
           <video
             className="season-video"
-            autoPlay={true}
-            muted={false}
+            autoPlay
             playsInline
-            onEnded={() => setVideoEnded(true)}
+            onEnded={handleVideoEnd}
           >
             <source src={crimsonVideo} type="video/mp4" />
             Seu navegador não suporta vídeo.
           </video>
         </div>
       )}
+
       {videoEnded && (
         <section className="season1-tutorial">
           <h1 className="main-title">
