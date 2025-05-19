@@ -5,8 +5,7 @@ import "./SeasonNotificationBar.css";
 export default function SeasonNotificationBar() {
   return (
     <div className="season-bar">
-      🚨 Temporada 1 começou! Novas recompensas e desafios estão no ar.{" "}
-      <Link to="/season-1">Confira agora</Link>
+      🧬 A mutação começou. <Link to="/season-1">Saiba tudo</Link>
     </div>
   );
 }

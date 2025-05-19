@@ -112,7 +112,7 @@ button.learn:hover {
 
   .connect-section p {
     font-size: 0.95rem;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
   }
 
   .buttons {
@@ -126,5 +126,9 @@ button.learn:hover {
     max-width: 260px;
     padding: 10px 16px;
     font-size: 0.95rem;
+  }
+
+  .connect-section {
+    margin-bottom: 20px;
   }
 }
