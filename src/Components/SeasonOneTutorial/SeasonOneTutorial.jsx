@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import crimsonVideo from "../../Assets/video/crimson.mp4";
 import "./SeasonOneTutorial.css";
 
 export default function SeasonOneTutorial() {
@@ -14,7 +15,7 @@ export default function SeasonOneTutorial() {
             playsInline
             onEnded={() => setVideoEnded(true)}
           >
-            <source src="./src/Assets/video/crimson.mp4" type="video/mp4" />
+            <source src={crimsonVideo} type="video/mp4" />
             Seu navegador não suporta vídeo.
           </video>
         </div>
