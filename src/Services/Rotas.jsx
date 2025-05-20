@@ -4,7 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import SeasonOneTutorial from "../Components/SeasonOneTutorial/SeasonOneTutorial";
+import SeasonOme from "../Pages/SeasonOne/Season01";
 import Home from "../Pages/Home/Home";
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
 
@@ -14,7 +14,7 @@ function Rotas() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/season-1" element={<SeasonOneTutorial />} />
+        <Route path="/season-1" element={<SeasonOme />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
