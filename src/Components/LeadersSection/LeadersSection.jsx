@@ -26,6 +26,7 @@ export default function LeadersSection() {
           <LeaderCard name="Baunilha" title="R4" />
           <LeaderCard name="Carolina" title="R4" />
           <LeaderCard name="Facinho" title="R4" />
+          <LeaderCard name="Sr. Sisi" title="R4" />
         </div>
 
         <p className="leaders-quote">
